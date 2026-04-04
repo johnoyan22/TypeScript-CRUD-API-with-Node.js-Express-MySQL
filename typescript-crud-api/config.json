@@ -3,8 +3,8 @@
         "host": "localhost",
         "port": 3306,
         "user": "root",
-        "password": "12345678",
+        "password": "P@ssw0rd",
         "database": "typescript_crud_api"
     },
-    "jwtSecret": "DANLEY_YAP_GALAN_2004_3_31"
+    "jwtSecret": "OYAN_JOHN_TIMOTHY_P_22"
 }
