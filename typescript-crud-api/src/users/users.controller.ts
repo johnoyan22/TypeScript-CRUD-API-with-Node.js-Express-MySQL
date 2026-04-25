@@ -5,7 +5,10 @@ import { Role } from "../_helpers/role";
 import { validateRequest } from "../middleware/validateRequest";
 import { userService } from "./user.service";
 
+
+
 const router = Router()
+
 
 router.get("/", getAll)
 router.get("/:id", getById)
@@ -14,6 +17,7 @@ router.put("/:id", updateSchema, update)
 router.delete("/:id", _delete)
 
 export default router
+
 
 function getAll(req: Request, res: Response, next: NextFunction): void {
     userService.getAll().then((users) => res.json((users))).catch(next)

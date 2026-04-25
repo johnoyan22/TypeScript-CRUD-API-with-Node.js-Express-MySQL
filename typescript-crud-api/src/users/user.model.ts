@@ -14,6 +14,7 @@ export interface UserAttributes {
     updatedAt: Date,
 }
 
+
 export interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'createdAt' | 'updatedAt'> { }
 
 
@@ -92,5 +93,11 @@ export default function (sequelize: Sequelize): typeof User {
         }
     )
 
+
     return User
 }
+
+
+
+
+
